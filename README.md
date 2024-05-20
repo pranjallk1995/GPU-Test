@@ -18,4 +18,4 @@ https://docs.nvidia.com/cuda/archive/11.6.2/wsl-user-guide/index.html
      3. ``` import tensorflow as tf ```
      4. ``` len(tf.config.list_physical_devices("GPU")) ```
 
-7. Hope that this process works when you are looking at it -_-
+7. Hope that this process works when you are follwing it -_-... always keeps changing...
