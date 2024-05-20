@@ -1,3 +1,3 @@
-FROM tensorflow/tensorflow:latest-gpu
+FROM nvidia/cuda:12.4.1-base-ubuntu22.04
 
-RUN apt update -y && apt upgrade -y && apt install gpustat -y
+RUN apt update -y && apt upgrade -y
