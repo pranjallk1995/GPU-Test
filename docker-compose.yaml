@@ -1,0 +1,17 @@
+services:
+  gpu-test:
+    image: tensorflow/tensorflow:latest-gpu
+    container_name: gpu-test
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: nvidia-smi
+      interval: 5s
+      timeout: 5s
+      retries: 3
+    command: sleep infinity
