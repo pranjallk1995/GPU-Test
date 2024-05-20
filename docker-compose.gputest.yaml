@@ -1,0 +1,18 @@
+services:
+  gpu-test:
+    container_name: gpu-test
+    build:
+      dockerfile: ./Dockerfile
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: gpustat
+      interval: 5s
+      timeout: 2s
+      retries: 10
+    command: sleep infinity
