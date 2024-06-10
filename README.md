@@ -19,7 +19,7 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
 
 ## Steps:
 
-1. Place the daemon.json in /etc/docker directory of WSL .
+1. Place the daemon.json in /etc/docker directory of WSL.
 
 2. Do ``` docker compose up -d ``` in the location the docker-compose.yaml is placed.
 
