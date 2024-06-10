@@ -4,6 +4,7 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
 ## Prerequisites:
 
 1. Follow the guide to setup WSL2 settings:
+
 nvidia-docker2: https://docs.nvidia.com/cuda/archive/11.6.2/wsl-user-guide/index.html
 nvidia-container-toolkit: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
 
