@@ -14,7 +14,8 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
    nvidia-docker2
    nvidia-container-toolkit
    ```
-4. Make sure you have CUDA installed in Windows.
+4. Make sure you have Nvidia Drivers installed in Windows.
+5. Make sure you have CUDA installed in Windows.
 
 ## Steps:
 
