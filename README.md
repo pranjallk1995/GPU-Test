@@ -10,6 +10,7 @@ https://docs.nvidia.com/cuda/archive/11.6.2/wsl-user-guide/index.html
    ```
    nvidia-docker2
    ```
+3. Make sure you have CUDA installed.
 
 ## Steps:
 
