@@ -32,3 +32,4 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
      4. ``` len(tf.config.list_physical_devices("GPU")) ```
 
 5. Hope that this process works when you are follwing it -_-... always keeps changing...
+6. EDIT: as always things changed and now use python base image and install using pip/uv tensorflow[and-cuda], keeping all other steps as the same. Till next edit!.. -_-
