@@ -1,7 +1,7 @@
 ## About
 A small docker compose code snippet to check for access of GPU inside a tensorflow container running in WSL2.
 
-# 2026 Prerequisites edit:
+## 2026 Prerequisites edit:
 
 1. Install the Nvidia Drivers on Windows System.
 
