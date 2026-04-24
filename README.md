@@ -38,7 +38,7 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
    
    `sudo systemctl restart docker`
 
-7. Pull, Build, and Run a specific TensorFlow image.
+7. Pull, Build, and Run a specific TensorFlow image or use the given compose file: `docker compose up -d`
    #### NOTE: Do not go for the latest TensorFlow image. CUDA support does not always exist. Also, no need to install CUDA and cuDNN in the WSL2 environment.
    
    eg:
