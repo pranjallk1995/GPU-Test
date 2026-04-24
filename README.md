@@ -61,7 +61,9 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
 
 Hope all that worked!....
 
-## Prerequisites:
+<hr>
+
+## Prerequisites (Deprecated):
 
 1. Follow the guide to setup WSL2 settings:
 
