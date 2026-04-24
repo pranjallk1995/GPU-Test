@@ -1,6 +1,6 @@
 services:
   gpu-test:
-    image: tensorflow/tensorflow:latest-gpu
+    image: tensorflow/tensorflow:latest-gpu  #do not use latest! Support may not always exist with the installed CUDA drivers.
     container_name: gpu-test
     deploy:
       resources:
