@@ -9,8 +9,11 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
 
      eg:
       check for available distro:
+   
       `wsl --list --online`
+   
       install:
+   
       `wsl --install Ubuntu`
 
 3. Install Cuda toolkit into the WSL2 environment: https://developer.nvidia.com/cuda-downloads
@@ -26,22 +29,34 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
 
 6. ### Possibly optional (docker takes care of this automatically these days when you mention --gpus all):
    configure Nvidia runtime in deamon.json:
+   
    generate the deamon.json file:
+   
    `sudo nvidia-ctk runtime configure --runtime=docker`
+   
    restart docker:
+   
    `sudo systemctl restart docker`
 
 7. Pull, Build, and Run a specific TensorFlow image.
-   # NOTE: Do not go for the latest TensorFlow image. CUDA support does not always exist. Also, no need to install CUDA and cuDNN in the WSL2 environment.
+   #### NOTE: Do not go for the latest TensorFlow image. CUDA support does not always exist. Also, no need to install CUDA and cuDNN in the WSL2 environment.
+   
    eg:
+   
    `sudo docker run -it --rm --gpus all tensorflow/tensorflow:2.16.1-gpu bash`
+   
    or
+   
    `sudo docker run -it --rm --gpus all nvcr.io/nvidia/tensorflow:24.11-tf2-py3 bash`
+   
    check for GPU inside the container:
+   
    `nvidia-smi`
 
 8. Check for detection of GPU by Tensorflow:
+    
     eg:
+    
     `python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"`
 
 Hope all that worked!....
