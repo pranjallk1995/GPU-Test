@@ -64,6 +64,10 @@ Hope all that worked!....
 PROOF:
 <img width="1260" height="596" alt="image" src="https://github.com/user-attachments/assets/b71485a5-fd60-4f34-be67-be584d662d8f" />
 
+Useful command for GPU monitoring:
+install GPU stat from pip: `pip install gpustat`
+put a watch on GPU usage: `watch gpustat`
+
 
 <hr>
 
