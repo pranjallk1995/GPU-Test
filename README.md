@@ -10,7 +10,7 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
      eg:
       check for available distro:
    
-      `wsl --list --online`
+      ```wsl --list --online```
    
       install:
    
@@ -60,6 +60,10 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
     `python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"`
 
 Hope all that worked!....
+
+PROOF:
+<img width="1260" height="596" alt="image" src="https://github.com/user-attachments/assets/b71485a5-fd60-4f34-be67-be584d662d8f" />
+
 
 <hr>
 
