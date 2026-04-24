@@ -6,6 +6,7 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
 1. Install the Nvidia Drivers on Windows System.
 
 2. Install some WSL2 Ubuntu distro.
+
      eg:
       check for available distro:
       `wsl --list --online`
@@ -13,12 +14,14 @@ A small docker compose code snippet to check for access of GPU inside a tensorfl
       `wsl --install Ubuntu`
 
 3. Install Cuda toolkit into the WSL2 environment: https://developer.nvidia.com/cuda-downloads
+
      check:
       `nvidia-smi`
 
 4. Install Docker engine: https://docs.docker.com/engine/install/ubuntu/
 
 5. Install Nvidia Container toolkit: https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html
+   
      check: `nvidia-ctk -v`
 
 6. ### Possibly optional (docker takes care of this automatically these days when you mention --gpus all):
